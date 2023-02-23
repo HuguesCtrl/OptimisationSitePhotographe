@@ -313,21 +313,24 @@ input[type='submit'] {
 }
 
 .card-horizontal-text {
-    padding: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    flex-direction: column;
+    padding-top: 10px;
 }
 
 .hotel-popular-name h3 {
-    margin-bottom: 5px;
+    margin: 0;
     font-size: 1em;
 }
 
 .hotel-popular-name p {
-    margin-top: 5px;
+    margin: 0;
     font-size: 1em;
 }
 
-.card-horizontal-text .star {
-    margin-top: 30px;
+.fa-star {
     font-size: 0.7em;
 }
 
@@ -456,15 +459,32 @@ footer a {
     }
 
     .card-horizontal-img img {
-        width: 80px;
-        height: 120px;
+        width: 100px;
+        height: 150px;
+        -o-object-fit: cover;
+        object-fit: cover;
     }
 
     .card-horizontal-text {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 0 0 10px 20px;
+        padding-top: 20px;
+        padding-left: 0;
+        padding-bottom: 10px;
+
+    }
+
+    .fa-star {
+        font-size: 0.9em;
+    }
+
+    .card-horizontal-text {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        flex-direction: column;
+        padding-top: 10px;
     }
 
     .hotel-popular-name h3 {
@@ -684,6 +704,5 @@ footer a {
         gap: 30px;
         font-size: 0.9em;
     }
-
 
 }
