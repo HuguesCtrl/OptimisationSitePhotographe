@@ -506,7 +506,11 @@ footer a {
 /* Fin de la partie tablette ************************************************/
 /* Debut de la partie mobile ******************************************************/
 @media screen and (max-width: 768px) {
-
+    body {
+        min-width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
 
     * {
         transform: none !important;
@@ -514,8 +518,7 @@ footer a {
 
     header {
         flex-direction: column;
-        width: 100%;
-
+        min-width: 100%;
     }
 
     header nav {
@@ -660,6 +663,7 @@ footer a {
 
     .list-activity h2 {
         font-size: 1.2em;
+        margin-left: 20px;
     }
 
     .grid-activity {
@@ -667,6 +671,7 @@ footer a {
         grid-template-columns: 1fr;
         gap: 20px;
         align-items: center;
+        padding: 10px;
     }
 
     .card-vertical-img img {
