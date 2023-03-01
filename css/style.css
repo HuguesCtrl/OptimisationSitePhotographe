@@ -598,7 +598,7 @@ footer a {
     footer {
         padding: 50px 50px 25px 50px;
         -moz-column-gap: 50px;
-        column-gap: 70px;
+        column-gap: 40px;
     }
 }
 
