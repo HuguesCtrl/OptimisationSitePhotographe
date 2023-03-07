@@ -285,7 +285,7 @@ input[type='submit'] {
 
 /* Stylisation les plus populaires **********************************************************************/
 .popular {
-    padding: 30px;
+    padding: 15px;
 }
 
 .popular-title {
@@ -347,8 +347,10 @@ input[type='submit'] {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-top: 10px;
+    padding-right: 5px;
+    width: 60%;
 }
 
 .hotel-popular-name h3 {
@@ -460,11 +462,11 @@ footer a {
 /* Fin du footer *********************************************************/
 /* Fin de la partie desktop *****************************************************************/
 /* Debut de la partie tablette ************************************/
-@media screen and (max-width: 1130px) {
+/* @media screen and (max-width: 1130px) {
     .img-popular-height {
         min-height: 150px;
     }
-}
+} */
 
 @media screen and (max-width: 992px) {
     body {
@@ -790,7 +792,7 @@ footer a {
 
     .list-activity h2 {
         font-size: 1.2em;
-        margin-left: 20px;
+        margin-left: 15px;
         margin-bottom: 10px;
         font-size: 22px;
     }
