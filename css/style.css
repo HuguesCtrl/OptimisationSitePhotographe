@@ -86,7 +86,6 @@ section h1 {
     display: inline-flex;
     border: 1px solid var(--color3);
     border-radius: 12px;
-
 }
 
 .search>* {
@@ -283,7 +282,7 @@ input[type='submit'] {
     color: var(--color1);
 }
 
-/* Stylisation les plus populaires **********************************************************************/
+/* Stylisation hebergement et les plus populaires **********************************************************************/
 .popular {
     padding: 15px;
 }
@@ -462,11 +461,7 @@ footer a {
 /* Fin du footer *********************************************************/
 /* Fin de la partie desktop *****************************************************************/
 /* Debut de la partie tablette ************************************/
-/* @media screen and (max-width: 1130px) {
-    .img-popular-height {
-        min-height: 150px;
-    }
-} */
+
 
 @media screen and (max-width: 992px) {
     body {
@@ -672,7 +667,6 @@ footer a {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         margin-top: 0;
-
     }
 
     .filter .animals {
