@@ -69,6 +69,11 @@ body {
     margin: auto
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 * {
     font-family: Inter;
     font-style: normal
