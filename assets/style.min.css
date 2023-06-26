@@ -16,7 +16,7 @@
 .quote__text,
 .quote__text em,
 .quote__text strong {
-    font-family: Spectral
+    font-family: Spectral;
 }
 
 .service,
@@ -157,8 +157,8 @@ img {
 
 .about-me__introduction {
     font-weight: 800;
+    font-size: 16px;
     width: 60%;
-    font-size: 16px
 }
 
 .about-me__introduction em,
@@ -320,6 +320,10 @@ input[type=submit] {
 @media all and (max-width:1180px) {
     .picture {
         flex: 2
+    }
+
+    .about-me__introduction {
+        width: 100%;
     }
 
     #about,

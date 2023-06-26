@@ -312,6 +312,8 @@ input[type="submit"] {
 		flex: 2;
 	}
 
+
+
 	#about,
 	#contact .container {
 		align-items: center;
@@ -417,6 +419,8 @@ input[type="submit"] {
 	.picture.right::before {
 		height: 150px;
 	}
+
+
 
 	#services .container {
 		align-items: center;
