@@ -70,11 +70,21 @@
 			"priceRange" : "50€ - 400€"
 		}
 	</script>
+
+	<!-- Système de mesure Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5P946PXJ4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-T5P946PXJ4');
+	</script>
 </head>
 
 <body>
 	<header class="top-header" role="banner">
-		<h1 class="name" aria-level="1">Nina Carducci</h1>
+		<h2 class="name" aria-level="1">Nina Carducci</h2>
 		<nav class="nav" role="navigation" aria-label="Menu principal">
 			<ul aria-labelledby="list-title" aria-describedby="list-description">
 				<li>
@@ -160,7 +170,7 @@
           " sizes="(max-width: 400px) 250px, (max-width: 950px) 380px, 560px" src="/assets/images/nina-carducci-560px.webp" alt="Portrait de Nina Carducci photographe avec des arbres en arrière-plan" width="375" height="375" />
 		</div>
 		<div id="about-me">
-			<h2 class="about-me__title" aria-level="2">A propos de moi</h2>
+			<h1 class="about-me__title" aria-level="2">Nina Carducci photographe à Bordeaux</h1>
 			<h3 class="about-me__introduction" aria-level="3">
 				Devenir <strong>photographe</strong> était pour moi une évidence.
 				Comme si j’y étais prédestiné. Saisir un moment, une émotion, une
@@ -322,10 +332,10 @@
 		</div>
 	</section>
 	<!-- Javascript -->
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
-	<script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
-	<script src="./assets/manugallery.min.js" defer></script>
-	<script src="./assets/script.min.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="/assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="./assets/manugallery.min.js"></script>
+	<script src="./assets/script.min.js"></script>
 </body>
 
 </html>
