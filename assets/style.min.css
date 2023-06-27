@@ -16,7 +16,7 @@
 .quote__text,
 .quote__text em,
 .quote__text strong {
-    font-family: Spectral;
+    font-family: Spectral
 }
 
 .service,
@@ -59,24 +59,19 @@ form {
     display: flex
 }
 
-.carousel-inner,
-.carousel-item {
-    transition-duration: 1s;
-}
-
 body {
     max-width: 1920px;
     margin: auto
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
 * {
     font-family: Inter;
     font-style: normal
+}
+
+img {
+    width: 100%;
+    height: auto
 }
 
 .top-header {
@@ -157,8 +152,8 @@ img {
 
 .about-me__introduction {
     font-weight: 800;
-    font-size: 16px;
     width: 60%;
+    font-size: 16px
 }
 
 .about-me__introduction em,
@@ -195,7 +190,7 @@ img {
 .nav-pills .nav-link.active-tag,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #45411C;
+    background-color: #45411c;
     border-radius: 0
 }
 
@@ -320,10 +315,6 @@ input[type=submit] {
 @media all and (max-width:1180px) {
     .picture {
         flex: 2
-    }
-
-    .about-me__introduction {
-        width: 100%;
     }
 
     #about,
