@@ -211,8 +211,13 @@ img {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    padding: .5em
+    padding: .5em;
 }
+
+.gallery-item img {
+    height: 100%;
+}
+
 
 .mg-next,
 .mg-prev {

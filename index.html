@@ -71,6 +71,15 @@
 		}
 	</script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5P946PXJ4"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'G-T5P946PXJ4');
+</script>
 
 <body>
 	<header class="top-header" role="banner">
@@ -189,15 +198,17 @@
 		<h2 class="title" aria-level="2">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none" role="region" aria-label="Photos professionnelles de Nina Carducci">
-				<!-- //Images webp responsive avec srcset -->
-				<img data-gallery-tag="Concert" class="gallery-item" srcset="
+
+				<img class="gallery-item" data-gallery-tag="Concert" srcset="
               ./assets/images/gallery/concerts/Concert-orange-440px.webp 440w,
               ./assets/images/gallery/concerts/Concert-orange-320px.webp 320w
             " sizes="(max-width: 1199px) 320px, 440px" src="./assets/images/gallery/concerts/Concert-orange-440px.webp" alt="Salle de concert orange avec beaucoup de lumières et de public vu de dos" loading="lazy" height="587" width="440" />
+
 				<img data-gallery-tag="Entreprises" class="gallery-item" srcset="
               ./assets/images/gallery/entreprise/Chef-entreprise-440px.webp 440w,
               ./assets/images/gallery/entreprise/Chef-entreprise-320px.webp 320w
             " sizes="(max-width: 1199px) 320px, 440px" src="./assets/images/gallery/entreprise/Chef-entreprise-440px.webp" alt="Jeune homme en costard prit en photo de face et croisant les bras" loading="lazy" width="440" height="660" />
+
 				<img data-gallery-tag="Entreprises" class="gallery-item" srcset="
               ./assets/images/gallery/entreprise/Heureux-au-travail-440px.webp 440w,
               ./assets/images/gallery/entreprise/Heureux-au-travail-320px.webp 320w
