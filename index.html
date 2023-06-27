@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta charset="UTF-8" />
 	<!-- CSS -->
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -107,36 +107,42 @@
 	</header>
 	<!-- Section slider -->
 	<section id="header" aria-label="Présentation de trois photos sous forme de slider">
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" itemscope itemtype="http://schema.org/ImageGallery">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
 			<div class="carousel-inner">
-				<div class="carousel-item active">
+				<div class="carousel-item active" itemprop="hasPart" itemscope itemtype="http://schema.org/ImageObject">
 					<!-- //Image webp responsive avec srcset -->
-					<img class="d-block w-100 h-auto" srcset="
+					<img itemprop="contentUrl" class="d-block w-100 h-auto" srcset="
                 ./assets/images/slider/homme-Japon-1905px.webp 1905w,
                 ./assets/images/slider/homme-Japon-1280px-2.webp 1280w,
                 ./assets/images/slider/homme-Japon-815px 815w" sizes="(max-width: 820px) 800px, (max-width: 1280px) 1250px, 1900px" src="./assets/images/slider/homme-Japon-1905px.webp"
 						alt="Homme japonnais traversant la rue, vue du dessus sur un passage pièton" width="1921" height="888" />
+					<meta itemprop="position" content="1">
+					<meta itemprop="name" content="Homme japonnais traversant la rue, vue du dessus sur un passage pièton">
 				</div>
-				<div class="carousel-item">
+				<div class="carousel-item" itemprop="hasPart" itemscope itemtype="http://schema.org/ImageObject">
 					<!-- //Image webp responsive avec srcset -->
-					<img class="d-block w-100 h-auto" srcset="
+					<img class="d-block w-100 h-auto" itemprop="contentUrl" srcset="
                 ./assets/images/slider/concert-festif-1905px.webp 1905w,
                 ./assets/images/slider/concert-festif-1280px.webp 1280w,
                 ./assets/images/slider/concert-festif-815px.webp   815w
               " sizes="(max-width: 820px) 800px, (max-width: 1280px) 1250px, 1900px" src="./assets/images/slider/concert-festif-1905px.webp" alt="Jeunes hommes levant les bras et heureux dans un concert de musique" width="1921" height="888" />
+					<meta itemprop="position" content="2">
+					<meta itemprop="name" content="Jeunes hommes levant les bras et heureux dans un concert de musique">
 				</div>
-				<div class="carousel-item">
+				<div class="carousel-item" itemprop="hasPart" itemscope itemtype="http://schema.org/ImageObject">
 					<!-- //Image webp responsive avec srcset -->
 					<img class="d-block w-100 h-auto" srcset="
                 ./assets/images/slider/mariage-festif-1905px.webp 1905w,
                 ./assets/images/slider/mariage-festif-1280px.webp 1280w,
                 ./assets/images/slider/mariage-festif-815px.webp   815w
               " sizes="(max-width: 820px) 800px, (max-width: 1280px) 1250px, 1900px" src="./assets/images/slider/mariage-festif-1905px.webp" alt="Couple marié s'embrassant lors d'une danse pendant la cérémonie" width="1921" height="888" />
+					<meta itemprop="position" content="3">
+					<meta itemprop="name" content="Couple marié s'embrassant lors d'une danse pendant la cérémonie">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Photo précèdente">
@@ -161,10 +167,10 @@
 		</div>
 		<div id="about-me">
 			<h1 class="about-me__title" aria-level="2">Nina Carducci photographe à Bordeaux</h1>
-			<h3 class="about-me__introduction" aria-level="3">
+			<h2 class="about-me__introduction" aria-level="3">
 				Devenir <strong>photographe</strong> était pour moi une évidence.
 				Comme si j’y étais prédestiné. Saisir un moment, une émotion, une
-				situation, un endroit, <em>une lumière</em> et les rendre immortels, voilà ce qui me fait vibrer. </h3>
+				situation, un endroit, <em>une lumière</em> et les rendre immortels, voilà ce qui me fait vibrer. </h2>
 			<p>
 				Nous passons notre vie à chercher le bonheur, et lorsque nous y
 				touchons, nous n’avons qu’une envie : le figer
