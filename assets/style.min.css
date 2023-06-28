@@ -71,7 +71,8 @@ body {
 
 img {
     width: 100%;
-    height: auto
+    height: auto;
+    display: block
 }
 
 .top-header {
@@ -214,6 +215,10 @@ img {
     padding: .5em
 }
 
+.gallery-item img {
+    height: 100%
+}
+
 .mg-next,
 .mg-prev {
     width: 30px;
@@ -240,7 +245,7 @@ form textarea {
 
 .quote__text {
     font-weight: 300;
-    font-size: 2.5em
+    font-size: 2.2em
 }
 
 .quote__author {
@@ -312,15 +317,27 @@ input[type=submit] {
     padding: .5em 1em
 }
 
-@media all and (max-width:1180px) {
+@media screen and (max-width:1180px) {
     .picture {
         flex: 2
+    }
+
+    .quote__text {
+        font-size: 28px
+    }
+
+    .quote__author {
+        font-size: 20px
     }
 
     #about-me h6,
     #about-me p,
     .about-me__introduction {
         width: 100%
+    }
+
+    .about-me__introduction h2 {
+        font-size: 13px
     }
 
     #about,
@@ -330,11 +347,12 @@ input[type=submit] {
 
     .about-me__title {
         margin-top: 0;
-        margin-bottom: 1em
+        margin-bottom: 1em;
+        font-size: 20px
     }
 }
 
-@media all and (max-width:1000px) {
+@media screen and (max-width:1000px) {
 
     .picture.left::before,
     .picture.right::before {
@@ -362,7 +380,8 @@ input[type=submit] {
 
     .about-me__title {
         text-align: center;
-        margin-top: 1em
+        margin-top: 1em;
+        font-size: 30px
     }
 
     .service {
@@ -395,10 +414,18 @@ input[type=submit] {
     }
 }
 
-@media all and (max-width:650px) {
+@media screen and (max-width:650px) {
     .top-header {
         flex-direction: column;
         padding-inline: 0
+    }
+
+    .quote__text {
+        font-size: 22px
+    }
+
+    .about-me__title {
+        font-size: 25px
     }
 
     .top-header .nav,

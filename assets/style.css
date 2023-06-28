@@ -8,6 +8,12 @@ body {
 	font-style: normal;
 }
 
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 .top-header {
 	background-color: white;
 	position: -webkit-sticky;
@@ -137,7 +143,7 @@ body {
 .nav-pills .nav-link.active-tag,
 .nav-pills .show>.nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #45411C;
 	border-radius: 0;
 }
 
@@ -167,6 +173,10 @@ body {
 	padding: .5em;
 }
 
+.gallery-item img {
+	height: 100%;
+}
+
 .mg-prev,
 .mg-next {
 	width: 30px;
@@ -190,7 +200,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-	font-size: 2.5em;
+	font-size: 2.2em;
 
 }
 
@@ -307,12 +317,26 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-@media all and (max-width: 1180px) {
+@media screen and (max-width: 1180px) {
 	.picture {
 		flex: 2;
 	}
 
+	.quote__text {
+		font-size: 28px;
+	}
 
+	.quote__author {
+		font-size: 20px;
+	}
+
+	.about-me__introduction {
+		width: 100%;
+	}
+
+	.about-me__introduction h2 {
+		font-size: 13px;
+	}
 
 	#about,
 	#contact .container {
@@ -322,6 +346,7 @@ input[type="submit"] {
 	.about-me__title {
 		margin-top: 0;
 		margin-bottom: 1em;
+		font-size: 20px;
 	}
 
 	#about-me h6,
@@ -330,7 +355,7 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	#about {
 		flex-direction: column;
 
@@ -353,6 +378,7 @@ input[type="submit"] {
 	.about-me__title {
 		text-align: center;
 		margin-top: 1em;
+		font-size: 30px;
 	}
 
 	#services .container {
@@ -397,10 +423,19 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 650px) {
+@media screen and (max-width: 650px) {
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
+	}
+
+	.quote__text {
+		font-size: 22px;
+	}
+
+
+	.about-me__title {
+		font-size: 25px;
 	}
 
 	.top-header .nav,
