@@ -11,6 +11,7 @@ body {
 img {
 	width: 100%;
 	height: auto;
+	display: block;
 }
 
 .top-header {
@@ -172,6 +173,10 @@ img {
 	padding: .5em;
 }
 
+.gallery-item img {
+	height: 100%;
+}
+
 .mg-prev,
 .mg-next {
 	width: 30px;
@@ -317,7 +322,9 @@ input[type="submit"] {
 		flex: 2;
 	}
 
-
+	.about-me__introduction {
+		width: 100%;
+	}
 
 	#about,
 	#contact .container {

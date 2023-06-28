@@ -6,7 +6,7 @@
 	<meta charset="UTF-8" />
 	<!-- CSS -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.min.css" />
+	<link rel="stylesheet" href="./assets/old/style.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" ref="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -70,16 +70,16 @@
 			"priceRange" : "50€ - 400€"
 		}
 	</script>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5P946PXJ4"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() { dataLayer.push(arguments); }
-	gtag('js', new Date());
+	<!-- Google tag (gtag.js) -->
+	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-T5P946PXJ4"></script>
+	<script defer>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	gtag('config', 'G-T5P946PXJ4');
-</script>
+		gtag('config', 'G-T5P946PXJ4');
+	</script>
+</head>
 
 <body>
 	<header class="top-header" role="banner">
@@ -125,7 +125,7 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active" itemprop="hasPart" itemscope itemtype="http://schema.org/ImageObject">
 					<!-- //Image webp responsive avec srcset -->
-					<img itemprop="contentUrl" class="d-block w-100 h-auto" srcset="
+					<img itemprop="contentUrl" srcset="
                 ./assets/images/slider/homme-Japon-1905px.webp 1905w,
                 ./assets/images/slider/homme-Japon-1280px-2.webp 1280w,
                 ./assets/images/slider/homme-Japon-815px 815w" sizes="(max-width: 820px) 800px, (max-width: 1280px) 1250px, 1900px" src="./assets/images/slider/homme-Japon-1905px.webp"
@@ -135,7 +135,7 @@
 				</div>
 				<div class="carousel-item" itemprop="hasPart" itemscope itemtype="http://schema.org/ImageObject">
 					<!-- //Image webp responsive avec srcset -->
-					<img class="d-block w-100 h-auto" itemprop="contentUrl" srcset="
+					<img itemprop="contentUrl" srcset="
                 ./assets/images/slider/concert-festif-1905px.webp 1905w,
                 ./assets/images/slider/concert-festif-1280px.webp 1280w,
                 ./assets/images/slider/concert-festif-815px.webp   815w
@@ -145,7 +145,7 @@
 				</div>
 				<div class="carousel-item" itemprop="hasPart" itemscope itemtype="http://schema.org/ImageObject">
 					<!-- //Image webp responsive avec srcset -->
-					<img class="d-block w-100 h-auto" srcset="
+					<img srcset="
                 ./assets/images/slider/mariage-festif-1905px.webp 1905w,
                 ./assets/images/slider/mariage-festif-1280px.webp 1280w,
                 ./assets/images/slider/mariage-festif-815px.webp   815w
@@ -204,7 +204,8 @@
               ./assets/images/gallery/concerts/Concert-orange-320px.webp 320w
             " sizes="(max-width: 1199px) 320px, 440px" src="./assets/images/gallery/concerts/Concert-orange-440px.webp" alt="Salle de concert orange avec beaucoup de lumières et de public vu de dos" loading="lazy" height="587" width="440" />
 
-				<img data-gallery-tag="Entreprises" class="gallery-item" srcset="
+
+				<img class="gallery-item" data-gallery-tag="Entreprises" class="gallery-item" srcset="
               ./assets/images/gallery/entreprise/Chef-entreprise-440px.webp 440w,
               ./assets/images/gallery/entreprise/Chef-entreprise-320px.webp 320w
             " sizes="(max-width: 1199px) 320px, 440px" src="./assets/images/gallery/entreprise/Chef-entreprise-440px.webp" alt="Jeune homme en costard prit en photo de face et croisant les bras" loading="lazy" width="440" height="660" />
@@ -338,6 +339,23 @@
 			</div>
 		</div>
 	</section>
+	<footer>
+		<div itemscope itemtype="https://schema.org/Person">
+
+			<h2>Nina Carducci</h2>
+			<p itemprop="jobTitle">Photographe freelance</p>
+			<p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+				<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
+				<br>
+				<span itemprop="postalCode">33200</span>
+				<span itemprop="addressLocality">Bordeaux</span>
+			</p>
+			<p itemprop="telephone">0556677889</p>
+			<p><a href="mailto:contact@nina-carducci.com">M'envoyer un mail</a></p>
+
+		</div>
+
+	</footer>
 	<!-- Javascript -->
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>

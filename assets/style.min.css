@@ -211,13 +211,8 @@ img {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    padding: .5em;
+    padding: .5em
 }
-
-.gallery-item img {
-    height: 100%;
-}
-
 
 .mg-next,
 .mg-prev {
@@ -322,6 +317,12 @@ input[type=submit] {
         flex: 2
     }
 
+    #about-me h6,
+    #about-me p,
+    .about-me__introduction {
+        width: 100%
+    }
+
     #about,
     #contact .container {
         align-items: center
@@ -330,11 +331,6 @@ input[type=submit] {
     .about-me__title {
         margin-top: 0;
         margin-bottom: 1em
-    }
-
-    #about-me h6,
-    #about-me p {
-        width: 100%
     }
 }
 
