@@ -1,0 +1,15 @@
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
+
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+
+#Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+#Activation du module de réécriture URL
+RewriteEngine on
+
+RewriteRule ^ninaCarducciPhotos$ huguesctrl.github.io [L]
