@@ -1,3 +1,8 @@
+# Feature-Policy
+<IfModule mod_headers.c>
+	Header set Permissions-Policy "geolocation 'self'; vibrate 'none'"
+</IfModule>
+
 #Compress Text JS HTML CSS XML
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
