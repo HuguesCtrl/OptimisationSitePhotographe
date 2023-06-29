@@ -4,6 +4,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta charset="UTF-8" />
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 	<!-- CSS -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css" />
@@ -295,7 +296,7 @@
 					<label for="nom">Nom</label>
 					<input type="text" name="nom" id="nom" aria-required="true" required />
 					<label for="email">Email</label>
-					<input type="email" name="email" id="email" aria-required="true" required autocomplete="off" />
+					<input type="email" name="email" id="email" aria-required="true" required autocomplete="email" />
 					<label for="message">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10" aria-required="true" required></textarea>
 					<input type="submit" value="Envoyer" />
