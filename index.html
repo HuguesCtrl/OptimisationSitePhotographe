@@ -122,31 +122,40 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active" itemprop="hasPart" itemscope itemtype="https://schema.org/ImageObject">
-					<!-- //Image webp responsive avec srcset -->
+					<!-- //Image webp responsive avec srcset et fallback-->
 					<img itemprop="contentUrl" srcset="
                 ./assets/images/slider/homme-Japon-1905px.webp 1905w,
                 ./assets/images/slider/homme-Japon-1280px.webp 1280w,
-                ./assets/images/slider/homme-Japon-815px.webp 815w" sizes="(max-width: 820px) 800px, (max-width: 1280px) 1250px, 1900px" src="./assets/images/slider/homme-Japon-1905px.webp"
+                ./assets/images/slider/homme-Japon-815px.webp 815w, 
+				./assets/images/jpeg/homme-Japon-1905px.jpg 1905w, 
+				./assets/images/jpeg/homme-Japon-1280px.jpg 1280w, 
+				./assets/images/jpeg/homme-Japon-815px.jpg 815w" sizes="(max-width: 820px) 800px, (max-width: 1280px) 1250px, 1900px" src="./assets/images/slider/homme-Japon-1905px.webp"
 						alt="Homme japonnais traversant la rue, vue du dessus sur un passage pièton" width="1905" height="881" />
 					<meta itemprop="position" content="1">
 					<meta itemprop="name" content="Homme japonnais traversant la rue, vue du dessus sur un passage pièton">
 				</div>
 				<div class="carousel-item" itemprop="hasPart" itemscope itemtype="https://schema.org/ImageObject">
-					<!-- //Image webp responsive avec srcset -->
+					<!-- //Image webp responsive avec srcset et fallback-->
 					<img itemprop="contentUrl" srcset="
                 ./assets/images/slider/concert-festif-1905px.webp 1905w,
                 ./assets/images/slider/concert-festif-1280px.webp 1280w,
-                ./assets/images/slider/concert-festif-815px.webp   815w
+                ./assets/images/slider/concert-festif-815px.webp 815w, 
+				./assets/images/jpeg/concert-festif-1905px.jpg 1905w,
+				./assets/images/jpeg/concert-festif-1280px.jpg 1280w,
+				./assets/images/jpeg/concert-festif-815px.jpg 815w
               " sizes="(max-width: 820px) 800px, (max-width: 1280px) 1250px, 1900px" src="./assets/images/slider/concert-festif-1905px.webp" alt="Jeunes hommes levant les bras et heureux dans un concert de musique" width="1905" height="881" />
 					<meta itemprop="position" content="2">
 					<meta itemprop="name" content="Jeunes hommes levant les bras et heureux dans un concert de musique">
 				</div>
 				<div class="carousel-item" itemprop="hasPart" itemscope itemtype="https://schema.org/ImageObject">
-					<!-- //Image webp responsive avec srcset -->
+					<!-- //Image webp responsive avec srcset et fallback-->
 					<img srcset="
                 ./assets/images/slider/mariage-festif-1905px.webp 1905w,
                 ./assets/images/slider/mariage-festif-1280px.webp 1280w,
-                ./assets/images/slider/mariage-festif-815px.webp 815w
+                ./assets/images/slider/mariage-festif-815px.webp 815w,
+				./assets/images/jpeg/mariage-festif-1905px.jpg 1905w,
+				./assets/images/jpeg/mariage-festif-1280px.jpg 1280w,
+				./assets/images/jpeg/mariage-festif-815px.jpg 815w
               " sizes="(max-width: 820px) 800px, (max-width: 1280px) 1250px, 1900px" src="./assets/images/slider/mariage-festif-1905px.webp" alt="Couple marié s'embrassant lors d'une danse pendant la cérémonie" width="1905" height="881" />
 					<meta itemprop="position" content="3">
 					<meta itemprop="name" content="Couple marié s'embrassant lors d'une danse pendant la cérémonie">
@@ -165,11 +174,14 @@
 	<!-- Section A propos -->
 	<section id="about" aria-label="Section de présentation de la photographe Nina Carducci">
 		<div class="picture left">
-			<!-- //Image webp responsive avec srcset -->
+			<!-- //Image webp responsive avec srcset et fallback-->
 			<img srcset="
             ./assets/images/nina-carducci-560px.webp 560w,
             ./assets/images/nina-carducci-380px.webp 380w,
-            ./assets/images/nina-carducci-250px.webp 250w
+            ./assets/images/nina-carducci-250px.webp 250w,
+			./assets/images/jpeg/nina-carducci-560px.jpg 560w,
+			./assets/images/jpeg/nina-carducci-380px.jpg 380w,
+			./assets/images/jpeg/nina-carducci-250px.jpg 250w,
           " sizes="(max-width: 400px) 250px, (max-width: 950px) 380px, 560px" src="./assets/images/nina-carducci-560px.webp" alt="Portrait de Nina Carducci photographe avec des arbres en arrière-plan" width="375" height="375" />
 		</div>
 		<div id="about-me" itemscope itemtype="https://schema.org/Person">
@@ -196,20 +208,24 @@
 		<h2 class="title" aria-level="2">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none" role="region" aria-label="Photos professionnelles de Nina Carducci">
-				<img class="gallery-item" data-gallery-tag="Concert" src="./assets/images/gallery/concerts/Concert-orange-575px.webp" alt="Salle de concert orange avec beaucoup de lumières et de public vu de dos" loading="lazy" height="767"
-					width="575" />
-				<img class="gallery-item" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/Chef-entreprise-575px.webp" alt="Jeune homme en costard prit en photo de face et croisant les bras" loading="lazy"
-					width="575" height="863" />
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/Heureux-au-travail-575px.webp" alt="Jeune femme assise et visiblement très heureuse à son travail" loading="lazy" height="575"
-					width="850" />
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/Liaison-amoureuse-575px.webp" alt="Jeunes personnes mariés prêt à se donner la main" loading="lazy" height="575" width="719" />
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/Portrait-homme-575px.webp" alt="Homme métisse de face et en gros plan fermant le yeux" loading="lazy" height="882" width="575" />
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/Maries-couple-575px.webp" alt="Couple marié heureux dans un jardin avec le sourire jusqu'au oreille" loading="lazy" height="863" width="440" />
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/Portrait-jeune-femme-575px.webp" alt="Jeunes fille à lunette prenant la pose la main dans les cheveux" loading="lazy" height="864"
-					width="575" />
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/Artiste-fumee-575px.webp" alt="Chanteur la main en l'air devant un nuage de fumée" loading="lazy" height="575" width="862" />
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/Sourire-Travail-575px.webp" alt="Jeune femme derrière un ordinateur portable heureuse de travailler" loading="lazy" height="575"
-					width="939" />
+				<img class="gallery-item" data-gallery-tag="Concert" srcset="./assets/images/gallery/concerts/Concert-orange-575px.webp, 
+				./assets/images/jpeg/Concert-orange-575px.jpg " src="./assets/images/gallery/concerts/Concert-orange-575px.webp" alt="Salle de concert orange avec beaucoup de lumières et de public vu de dos" loading="lazy" height="767" width="575" />
+				<img class="gallery-item" data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/Chef-entreprise-575px.webp, 
+				./assets/images/jpeg/Chef-entreprise-575px.jpg" src="./assets/images/gallery/entreprise/Chef-entreprise-575px.webp" alt="Jeune homme en costard prit en photo de face et croisant les bras" loading="lazy" width="575" height="863" />
+				<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/Heureux-au-travail-575px.webp, 
+				./assets/images/jpeg/Heureux-au-travail-575px.jpg" src="./assets/images/gallery/entreprise/Heureux-au-travail-575px.webp" alt="Jeune femme assise et visiblement très heureuse à son travail" loading="lazy" height="575" width="850" />
+				<img data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/Liaison-amoureuse-575px.webp,
+				./assets/images/jpeg/Liaison-amoureuse-575px.jpg" src="./assets/images/gallery/mariage/Liaison-amoureuse-575px.webp" alt="Jeunes personnes mariés prêt à se donner la main" loading="lazy" height="575" width="719" />
+				<img data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/Portrait-homme-575px.webp, 
+				./assets/images/jpeg/Portrait-homme-575px.jpg" src="./assets/images/gallery/portraits/Portrait-homme-575px.webp" alt="Homme métisse de face et en gros plan fermant le yeux" loading="lazy" height="882" width="575" />
+				<img data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/Maries-couple-575px.webp, 
+				./assets/images/jpeg/Maries-couple-575px.jpg" src="./assets/images/gallery/mariage/Maries-couple-575px.webp" alt="Couple marié heureux dans un jardin avec le sourire jusqu'au oreille" loading="lazy" height="863" width="440" />
+				<img data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/Portrait-jeune-femme-575px.webp, 
+				./assets/images/jpeg/Portrait-jeune-femme-575px.jpg" src="./assets/images/gallery/portraits/Portrait-jeune-femme-575px.webp" alt="Jeunes fille à lunette prenant la pose la main dans les cheveux" loading="lazy" height="864" width="575" />
+				<img data-gallery-tag="Concert" class="gallery-item" srcset="./assets/images/gallery/concerts/Artiste-fumee-575px.webp, 
+				./assets/images/jpeg/Artiste-fumee-575px.jpg" src="./assets/images/gallery/concerts/Artiste-fumee-575px.webp" alt="Chanteur la main en l'air devant un nuage de fumée" loading="lazy" height="575" width="862" />
+				<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/Sourire-Travail-575px.webp, 
+				./assets/images/jpeg/Sourire-Travail-575px.jpg" src="./assets/images/gallery/entreprise/Sourire-Travail-575px.webp" alt="Jeune femme derrière un ordinateur portable heureuse de travailler" loading="lazy" height="575" width="939" />
 			</div>
 		</div>
 		<div class="quote">
@@ -303,10 +319,12 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<!-- //Images webp responsive avec srcset -->
+				<!-- //Images webp responsive avec srcset et fallback-->
 				<img srcset="
               ./assets/images/appareil-photo-kodak-450px.webp 450w,
-              ./assets/images/appareil-photo-kodak-300px.webp 300w
+              ./assets/images/appareil-photo-kodak-300px.webp 300w,
+			  ./assets/images/jpeg/appareil-photo-kodak-450px.jpg 450w,
+			  ./assets/images/jpeg/appareil-photo-kodak-300px.jpg 300w
             " sizes="(max-width: 461px) 300px, 450px" src="./assets/images/appareil-photo-kodak-450px.webp" alt="Appareil photo Kodak avec un filtre sépia" width="450" height="450" loading="lazy" />
 			</div>
 		</div>
