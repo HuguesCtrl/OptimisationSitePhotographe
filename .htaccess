@@ -1,7 +1,5 @@
-# Feature-Policy
-<IfModule mod_headers.c>
-	Header set Permissions-Policy "geolocation 'self'; vibrate 'none'"
-</IfModule>
+#Header Permissions-Policy
+Header set Permissions-Policy "accelerometer=(), geolocation=('self'), fullscreen=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), display-capture=('self')"
 
 #Compress Text JS HTML CSS XML
 SetOutputFilter DEFLATE
